@@ -91,7 +91,7 @@
       in
         dockerTools.buildLayeredImage {
           name = final.workerd.pname;
-          tag = final.workerd.version;
+          tag = "latest";
           contents = [
             env
             dockerTools.caCertificates
