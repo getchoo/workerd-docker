@@ -18,7 +18,7 @@ jobs:
       - uses: cachix/install-nix-action@v22
       - uses: DeterminateSystems/magic-nix-cache-action@main
 
-      - uses: DeterminateSystems/update-flake-lock@v19
+      - uses: DeterminateSystems/update-flake-lock@v20
         with:
           commit-msg: "deps(flake): update inputs"
           pr-title: "deps(flake): update inputs"
