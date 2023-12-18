@@ -22,7 +22,7 @@ jobs:
           readlink result | xargs -I {} cp {} workerd.tar.gz
 
       - name: upload docker image
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: container
           path: workerd.tar.gz
