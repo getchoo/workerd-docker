@@ -19,7 +19,7 @@ jobs:
         uses: cachix/install-nix-action@v26
 
       - name: Setup Nix cache
-        uses: DeterminateSystems/magic-nix-cache-action@v4
+        uses: DeterminateSystems/magic-nix-cache-action@v6
 
       - run: |
           nix build .#container-x86_64
